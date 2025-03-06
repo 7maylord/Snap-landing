@@ -43,7 +43,7 @@ body {
   align-items: center;
 }
 
-.navbar-brand img {
+.snap-logo {
   height: 30px;
   margin-right: 60px;
 }
@@ -67,6 +67,12 @@ body {
 }
 
 /* Dropdown styling */
+.arrow {
+  width: 20px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -82,7 +88,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: var(--almost-white);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   border-radius: 10px;
@@ -104,6 +110,7 @@ body {
 .dropdown-item img {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .auth-buttons {
@@ -245,7 +252,7 @@ body {
   right: 0;
   width: 250px;
   height: 100vh;
-  background-color: white;
+  background-color: var(--almost-white);
   z-index: 100;
   padding: 20px;
   transform: translateX(100%);
